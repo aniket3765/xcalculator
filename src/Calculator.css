@@ -1,0 +1,71 @@
+.calculator {
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.calculator-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 18px;
+  text-align: right;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.calculator-result {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: right;
+  color: #666;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.calculator-buttons button {
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.calculator-buttons button:hover {
+  background-color: #d0d0d0;
+}
+
+.calculator-buttons button:nth-child(4n),
+.calculator-buttons button:last-child {
+  background-color: #f0a500;
+  color: white;
+}
+
+.calculator-buttons button:nth-child(4n):hover,
+.calculator-buttons button:last-child:hover {
+  background-color: #e09500;
+}
+
+.calculator-buttons button:last-child {
+  grid-column: span 2;
+}
